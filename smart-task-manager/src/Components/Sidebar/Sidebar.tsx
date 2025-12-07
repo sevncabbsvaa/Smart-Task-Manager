@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Sidebar.scss";
 
 import profil from "../../assets/images/profil-picture.jpg";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo-m.jpg";
 
 interface UserProfile {
   name: string;

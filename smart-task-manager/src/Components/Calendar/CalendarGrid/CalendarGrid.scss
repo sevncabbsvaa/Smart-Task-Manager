@@ -1,0 +1,13 @@
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+
+  .calendar-header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    color: #6b7280;
+    padding: 6px 0;
+  }
+}

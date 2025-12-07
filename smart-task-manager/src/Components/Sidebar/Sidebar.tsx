@@ -23,7 +23,7 @@ export default function Sidebar () {
   const navItems = [
     { to: "/dashboard", label: "Dashboard" },
     { to: "/tasks", label: "Tasks" },
-    { to: "/client/chatbot", label: "Calendar" },
+    { to: "/calendar", label: "Calendar" },
     { to: "/therapist-sign-up", label: "Settings" },
   ];
 

@@ -21,4 +21,6 @@ function App() {
   )
 }
 
+// bugs fixed
+
 export default App

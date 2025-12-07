@@ -1,0 +1,22 @@
+.add-task-button {
+  margin-top: 12px;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  padding: 14px 0;
+  text-align: center;
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  background: #fafafa;
+  transition: 0.25s ease;
+
+  &:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+    color: #4b5563;
+  }
+}

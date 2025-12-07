@@ -40,11 +40,30 @@ const tasks = [
 ];
 
 export default function TaskBoard() {
+
+  const handleAddTask = (column: string) => {
+    console.log("Yeni task əlavə ediləcək →", column);
+  };
+
   return (
     <div className="task-board">
-      <TaskColumn title="To Do" tasks={tasks.filter(t => t.status === "todo")} />
-      <TaskColumn title="In Progress" tasks={tasks.filter(t => t.status === "inprogress")} />
-      <TaskColumn title="Completed" tasks={tasks.filter(t => t.status === "completed")} />
+      <TaskColumn
+        title="To Do"
+        tasks={tasks.filter((t) => t.status === "todo")}
+        onAddTask={handleAddTask}
+      />
+
+      <TaskColumn
+        title="In Progress"
+        tasks={tasks.filter((t) => t.status === "inprogress")}
+        onAddTask={handleAddTask}
+      />
+
+      <TaskColumn
+        title="Completed"
+        tasks={tasks.filter((t) => t.status === "completed")}
+        onAddTask={handleAddTask}
+      />
     </div>
   );
 }

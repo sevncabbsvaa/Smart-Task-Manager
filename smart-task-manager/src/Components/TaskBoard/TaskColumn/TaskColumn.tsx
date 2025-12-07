@@ -1,4 +1,5 @@
 import TaskCard from "../TaskCard/TaskCard";
+import AddTaskButton from "../../AddTaskButton/AddTaskButton";
 import "./TaskColumn.scss";
 
 interface Task {
@@ -12,9 +13,10 @@ interface Task {
 interface TaskColumnProps {
   title: string;
   tasks: Task[];
+  onAddTask: (column: string) => void;
 }
 
-export default function TaskColumn({ title, tasks }: TaskColumnProps) {
+export default function TaskColumn({ title, tasks, onAddTask }: TaskColumnProps) {
   return (
     <div className="task-column">
       <div className="column-header">
@@ -25,6 +27,8 @@ export default function TaskColumn({ title, tasks }: TaskColumnProps) {
       {tasks.map((task) => (
         <TaskCard key={task.id} task={task} />
       ))}
+
+      <AddTaskButton onClick={() => onAddTask(title)} />
     </div>
   );
 }

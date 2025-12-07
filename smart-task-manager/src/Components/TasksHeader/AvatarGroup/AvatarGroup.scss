@@ -1,0 +1,22 @@
+.avatar-group {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: -8px;
+    border: 2px solid white;
+    object-fit: cover;
+  }
+
+  .extra {
+    margin-left: -6px;
+    background: #e3e5ee;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}

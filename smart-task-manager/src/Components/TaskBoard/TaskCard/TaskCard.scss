@@ -1,0 +1,44 @@
+.task-card {
+  background: #fff;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e1e3e8;
+  margin-bottom: 10px;
+
+  .done {
+    text-decoration: line-through;
+    color: #9aa0a8;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+
+    .due {
+      color: #7b818c;
+    }
+
+    .priority {
+      padding: 2px 10px;
+      border-radius: 14px;
+
+      &.high {
+        background: #fee2e2;
+        color: #d62323;
+      }
+      &.medium {
+        background: #fef9c3;
+        color: #b08900;
+      }
+      &.low {
+        background: #dbeafe;
+        color: #2463eb;
+      }
+      &.done {
+        background: #d1fae5;
+        color: #047857;
+      }
+    }
+  }
+}

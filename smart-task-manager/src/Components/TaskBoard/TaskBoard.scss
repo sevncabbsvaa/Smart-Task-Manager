@@ -1,0 +1,10 @@
+.task-board {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width:900px) {
+    .task-board {
+        display: block;
+    }
+}

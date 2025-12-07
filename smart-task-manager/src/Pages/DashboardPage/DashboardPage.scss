@@ -1,0 +1,48 @@
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+
+        .notifyIcon {
+            width: 25px;
+            height: 25px;
+            color: #555;
+            display: flex;
+        }
+    }
+}
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-task {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+@media (max-width:900px) {
+    .cards {
+        display: block;
+        width: 100%;
+    }
+
+    .add-task {
+        display: block;
+    }
+
+    .dashboard-header {
+        display: block;
+
+    }
+}

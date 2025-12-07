@@ -22,3 +22,10 @@
     gap: 14px;
   }
 }
+
+
+@media (max-width: 900px) {
+  .calendar-header {
+    display: block;
+  }
+}

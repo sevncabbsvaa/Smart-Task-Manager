@@ -24,7 +24,7 @@ export default function Sidebar () {
     { to: "/dashboard", label: "Dashboard" },
     { to: "/tasks", label: "Tasks" },
     { to: "/calendar", label: "Calendar" },
-    { to: "/therapist-sign-up", label: "Settings" },
+    { to: "/settings", label: "Settings" },
   ];
 
   return (

@@ -1,0 +1,73 @@
+.avatar-section {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .avatar-wrapper {
+      position: relative;
+      width: 70px;
+      height: 70px;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      .edit-icon {
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        background: #2563ff;
+        border-radius: 50%;
+        padding: 4px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .info {
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 14px;
+        color: #6b7280;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
+
+    .remove-btn {
+      background: #f3f4f6;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .avatar-btn {
+      background: #eef2ff;
+      color: #2563ff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

@@ -25,3 +25,13 @@
     }
   }
 }
+
+@media (max-width:900px) {
+  .tasks-header {
+    display: block;
+    
+    .right-section {
+      margin-top: 20px;
+    }
+  }
+}
